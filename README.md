@@ -1,12 +1,9 @@
 #Card Game - Are you Lucky ? 
 
 ######Desing Problem lets have fun :D
----
 
 I want to develop a multiplayer card game, where 5 cards will be distributed to each player, the game has 5 rounds, in each round each player will draw a card. A player with higher card will win the round and the player who will win maximum rounds will win the game.
 
-
----
 ####Higher card rule - 
 
 
@@ -18,12 +15,8 @@ I want to develop a multiplayer card game, where 5 cards will be distributed to 
 > 2. For same suite cards the they are compared based on the face value where
         Ace = 1, Jack = 11, Queen = 12 and King = 13
 
-
-
 #### keywords 
     D = Diamonds, H = Hearts, C = Clubs, S = Spades
-
----
 
 ####Story 1:	
 
@@ -41,19 +34,15 @@ I want to develop a multiplayer card game, where 5 cards will be distributed to 
 *   Not in the same order as above
 *   No more than 3 consecutive cards of the same suite
 
----
 
 ####Story 2:
 >   As a player, I want to distribute one card to each team player 
 (total 4 players including me) so that game is ready to play.
- 
-* Input 
->   All 52 cards in random order
 
-* Output 	
->   Each player gets one cards, all four cards are unique
-
----
+>* Input
+        All 52 cards in random order
+>* Output
+        Each player gets one cards, all four cards are unique
 
 ####Story 3:
 > As a player, I want to start playing a game, each player draws their card so that winner is decided based on the higher card (See the rule to decide higher card)
@@ -76,4 +65,7 @@ I want to develop a multiplayer card game, where 5 cards will be distributed to 
     		Player 3 --> C 10
     		Player 4 --> C 9
 >* ####Output 
-        Winner is Player 4
+        Winner is Player 3
+
+=====================================================
+        
