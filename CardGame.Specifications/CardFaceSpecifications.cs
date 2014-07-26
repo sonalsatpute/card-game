@@ -5,7 +5,7 @@ namespace CardGame.Specifications
 {
     public class CardFaceSpecifications
     {
-        public class when_face_creted
+        public class when_face_created
         {
             private Establish context = () => _face = new Face("Ace", 1);
 

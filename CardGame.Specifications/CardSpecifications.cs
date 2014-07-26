@@ -7,7 +7,7 @@ namespace CardGame.Specifications
 {
     class CardSpecifications
     {
-        class when_card_create : WithFakes
+        class when_card_created : WithFakes
         {
             private Establish context = () =>
             {

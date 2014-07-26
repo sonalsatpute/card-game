@@ -40,12 +40,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Card.cs" />
+    <Compile Include="Club.cs" />
+    <Compile Include="Diamond.cs" />
     <Compile Include="Face.cs" />
+    <Compile Include="Heard.cs" />
     <Compile Include="ICard.cs" />
     <Compile Include="ICardBuilder.cs" />
     <Compile Include="IFace.cs" />
     <Compile Include="ISuite.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Spade.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
