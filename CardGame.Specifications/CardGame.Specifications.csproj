@@ -59,7 +59,9 @@
   <ItemGroup>
     <Compile Include="CardBuilderSpecifications.cs" />
     <Compile Include="CardFaceSpecifications.cs" />
+    <Compile Include="CardSpecifications.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SuiteSpecifications.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
