@@ -42,17 +42,17 @@
     <Compile Include="Builder.cs" />
     <Compile Include="Card.cs" />
     <Compile Include="Cards.cs" />
-    <Compile Include="Club.cs" />
-    <Compile Include="Diamond.cs" />
+    <Compile Include="Suite\Club.cs" />
+    <Compile Include="Suite\Diamond.cs" />
     <Compile Include="Face.cs" />
-    <Compile Include="Heard.cs" />
+    <Compile Include="Suite\Heard.cs" />
     <Compile Include="IBuilder.cs" />
     <Compile Include="ICard.cs" />
     <Compile Include="ICards.cs" />
     <Compile Include="IFace.cs" />
-    <Compile Include="ISuite.cs" />
+    <Compile Include="Suite\ISuite.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Spade.cs" />
+    <Compile Include="Suite\Spade.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

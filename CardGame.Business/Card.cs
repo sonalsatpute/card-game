@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.ComponentModel;
+using CardGame.Business.Suite;
 
 namespace CardGame.Business
 {

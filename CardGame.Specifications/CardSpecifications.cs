@@ -1,4 +1,5 @@
 ﻿using CardGame.Business;
+using CardGame.Business.Suite;
 using Machine.Fakes;
 using Machine.Specifications;
 

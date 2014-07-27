@@ -2,6 +2,7 @@
 using System.Security.AccessControl;
 using System.Security.Cryptography;
 using CardGame.Business;
+using CardGame.Business.Suite;
 using Machine.Fakes;
 using Machine.Specifications;
 
@@ -73,15 +74,80 @@ namespace CardGame.Specifications
         {
             Establish constext = () => _builder = new Builder();
 
-            Because of = () =>
-            {
-                _cards = _builder.Build(new Diamond());
-            };
+            Because of = () => _cards = _builder.Build(new Diamond());
 
-            It all_cards_should_be_diamond = () => _cards.ShouldContain(card => (card.Suite is Diamond));
+            It all_cards_should_be_diamond = () => ShouldHaveOnlyDiamondCards();
+
+            static void ShouldHaveOnlyDiamondCards()
+            {
+                foreach (ICard card in _cards)
+                {
+                    card.Suite.ShouldBeOfExactType<Diamond>();
+                }
+            }
 
             static ICards _cards;
             static Builder _builder;
+        }
+
+        public class when_building_heart_card_suite
+        {
+            Establish context = () => _builder = new Builder();
+
+            Because of = () => _cards = _builder.Build(new Heard());
+
+            It all_cards_should_be_of_heart = () => ShouldHaveOnlyHeartCards();
+
+            static void ShouldHaveOnlyHeartCards()
+            {
+                foreach (ICard card in _cards)
+                {
+                    card.Suite.ShouldBeOfExactType<Heard>();
+                }
+            }
+
+            static IBuilder _builder;
+            static ICards _cards;
+        }
+
+        public class when_building_clud_card_suite
+        {
+            Establish context = () => _builder = new Builder();
+
+            Because of = () => _cards = _builder.Build(new Club());
+
+            It all_cards_should_be_of_heart = () => ShouldHaveOnlyHeartCards();
+
+            static void ShouldHaveOnlyHeartCards()
+            {
+                foreach (ICard card in _cards)
+                {
+                    card.Suite.ShouldBeOfExactType<Club>();
+                }
+            }
+
+            static IBuilder _builder;
+            static ICards _cards;
+        }
+
+        public class when_building_spade_card_suite
+        {
+            Establish context = () => _builder = new Builder();
+
+            Because of = () => _cards = _builder.Build(new Spade());
+
+            It all_cards_should_be_of_heart = () => ShouldHaveOnlyHeartCards();
+
+            static void ShouldHaveOnlyHeartCards()
+            {
+                foreach (ICard card in _cards)
+                {
+                    card.Suite.ShouldBeOfExactType<Spade>();
+                }
+            }
+
+            static IBuilder _builder;
+            static ICards _cards;
         }
     }
 }

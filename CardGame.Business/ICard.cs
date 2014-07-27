@@ -1,4 +1,6 @@
-﻿namespace CardGame.Business
+﻿using CardGame.Business.Suite;
+
+namespace CardGame.Business
 {
     public interface ICard
     {

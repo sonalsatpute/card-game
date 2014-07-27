@@ -1,5 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 using CardGame.Business;
+using CardGame.Business.Suite;
 using Machine.Specifications;
 
 namespace CardGame.Specifications

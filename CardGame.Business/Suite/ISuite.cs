@@ -1,4 +1,4 @@
-﻿namespace CardGame.Business
+﻿namespace CardGame.Business.Suite
 {
     public interface ISuite
     {

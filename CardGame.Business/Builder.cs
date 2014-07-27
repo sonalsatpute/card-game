@@ -1,12 +1,13 @@
 using System;
+using CardGame.Business.Suite;
 
 namespace CardGame.Business
 {
     public class Builder : IBuilder
     {
-        public Cards Build(ISuite suite)
+        public ICards Build(ISuite suite)
         {
-            Cards cards = new Cards {new Card(new Face("Ace", 1), suite)};
+            ICards cards = new Cards {new Card(new Face("Ace", 1), suite)};
 
             for (int index = 1; index <= 10; index++)
             {

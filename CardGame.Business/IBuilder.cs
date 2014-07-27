@@ -1,7 +1,9 @@
-﻿namespace CardGame.Business
+﻿using CardGame.Business.Suite;
+
+namespace CardGame.Business
 {
     public interface IBuilder
     {
-        Cards Build(ISuite suite);
+        ICards Build(ISuite suite);
     }
 }
