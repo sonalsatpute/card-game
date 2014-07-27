@@ -39,13 +39,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Builder.cs" />
     <Compile Include="Card.cs" />
+    <Compile Include="Cards.cs" />
     <Compile Include="Club.cs" />
     <Compile Include="Diamond.cs" />
     <Compile Include="Face.cs" />
     <Compile Include="Heard.cs" />
+    <Compile Include="IBuilder.cs" />
     <Compile Include="ICard.cs" />
-    <Compile Include="ICardBuilder.cs" />
+    <Compile Include="ICards.cs" />
     <Compile Include="IFace.cs" />
     <Compile Include="ISuite.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

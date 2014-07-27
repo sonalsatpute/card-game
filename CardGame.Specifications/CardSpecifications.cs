@@ -1,5 +1,4 @@
-﻿using System.Configuration;
-using CardGame.Business;
+﻿using CardGame.Business;
 using Machine.Fakes;
 using Machine.Specifications;
 
@@ -19,7 +18,6 @@ namespace CardGame.Specifications
 
             It should_have_face = () => _card.Face.ShouldNotBeNull();
             It should_have_suite = () => _card.Suite.ShouldNotBeNull();
-
 
             private static ICard _card;
         }

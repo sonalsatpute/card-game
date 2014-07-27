@@ -1,11 +1,7 @@
 ﻿namespace CardGame.Business
 {
-    public interface ICardBuilder
+    public interface IBuilder
     {
         Cards Build(ISuite suite);
-    }
-
-    public class Cards
-    {
     }
 }

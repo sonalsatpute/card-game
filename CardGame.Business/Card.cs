@@ -1,4 +1,7 @@
-﻿namespace CardGame.Business
+﻿using System.Collections;
+using System.ComponentModel;
+
+namespace CardGame.Business
 {
     public class Card : ICard
     {
