@@ -1,2 +1,2 @@
-param($varialbtest)
-Write-Host "Test script for jenkins! $varialbtest"
+param($variabletest)
+Write-Host "Test script for jenkins! $variabletest"
